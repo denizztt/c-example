@@ -1,0 +1,16 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	int a=1,b=1,c,i=3,n;
+	printf ("\t fibonacci'nin kac terimini gormek istiyorsunuz?\n");
+	scanf ("%d",&n);
+	printf ("\t %d\n",a);
+	printf ("\t %d\n",b);
+	for (i=3;i<=n;i++) {
+		c=a+b;
+	    printf ("\t %d\n",c);
+	    a=b;
+	    b=c;
+	}	
+	return 0;
+}

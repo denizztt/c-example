@@ -1,0 +1,13 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	int basamaksayisi=0,sayi;
+	printf ("bir sayi giriniz\n");
+	scanf ("%d",&sayi);
+	while (sayi>0) {
+		sayi=sayi/10;
+		basamaksayisi=basamaksayisi+1;
+		}
+	printf ("basamak sayisi : %d\n",basamaksayisi);
+			return 0;
+}

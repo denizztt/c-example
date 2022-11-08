@@ -1,0 +1,24 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	int i=1,hayalisayi,kalan,sayinintersi=0,n,sayi;
+	printf ("kac basamakli bir sayi gireceksiniz\n");
+	scanf ("%d",&n);
+	printf ("%d basamakli bir sayi girin\n",n);
+	scanf ("%d",&sayi);
+		hayalisayi=sayi;
+				for(i=1;i<=n;i++) {
+	kalan=sayi%10;
+	printf ("%d kalan\n",kalan);
+	sayinintersi=(sayinintersi*10)+kalan;
+	printf ("sayinin tersi %d\n",sayinintersi);
+	sayi=sayi/10;
+	}
+
+	if (hayalisayi==sayinintersi){
+			printf ("%d sayisinin tersi %d yani kendisine esittir\n",hayalisayi,sayinintersi);
+	}
+	else 
+	printf ("%d sayisinin tersi %d yani kendisine esit degildir\n",hayalisayi,sayinintersi);
+	return 0;
+}

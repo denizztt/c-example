@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	int sayi,kare,toplam=0,n;
+	printf ("\tsayinin hangi degerde durmasini istersiniz?\n");
+	scanf ("%d",&n);
+	for (sayi=1;sayi<=n;sayi++)
+	{
+		kare=sayi*sayi;
+		toplam=toplam+kare;
+		printf ("%d sayisinin karesi: %d toplam: %d\n",sayi,kare,toplam);
+		}
+	return 0;
+}

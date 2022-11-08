@@ -1,0 +1,15 @@
+#include <stdio.h>
+int main(int argc, char *argv[])
+{
+	int sayi,gecicisayi,kalan=0,sayinintersi=0;
+	printf ("\t bir sayi girin\n");
+	scanf ("%d",&sayi);
+	gecicisayi=sayi;
+	while (gecicisayi!=0) {
+		kalan=gecicisayi%10;
+		sayinintersi=(sayinintersi*10)+kalan;
+		gecicisayi=gecicisayi/10;
+	}	
+	printf ("\t %d sayisinin tersi %d\n",sayi,sayinintersi);
+	return 0;
+}
